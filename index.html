@@ -7,6 +7,22 @@
 </head>
 <body>
   <h1>点击按钮拨打电话</h1>
-  <button onclick="window.location.href='tel:+13688888888'">拨打电话</button>
+  <button onclick="dialNumber()">拨打电话</button>
+
+  <script>
+    function dialNumber() {
+      // 创建一个隐藏的链接，设置拨号协议
+      var phoneNumber = "+8613688893980"; // 你要拨打的号码
+      var link = document.createElement('a');
+      link.href = 'tel:' + phoneNumber;
+
+      // 添加到页面并点击它
+      document.body.appendChild(link);
+      link.click();
+
+      // 之后移除链接
+      document.body.removeChild(link);
+    }
+  </script>
 </body>
 </html>
