@@ -1,28 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+ 
+<头>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>拨打电话</title>
-</head>
-<body>
+  <title>拨打</title>
+</头部>
+<身体>
   <h1>点击按钮拨打电话</h1>
-  <button onclick="dialNumber()">拨打电话</button>
+  <按钮 点击="拨打电话号码()">拨打</按钮>
 
-  <script>
-    function dialNumber() {
-      // 创建一个隐藏的链接，设置拨号协议
-      var phoneNumber = "+8613688893980"; // 你要拨打的号码
+  <脚本>
+    功能 拨打电话号码() {
+      var phoneNumber = "+13688888888"; // 你要拨打的号码
+
+      // 使用 JavaScript 创建并触发拨号操作
       var link = document.createElement('a');
-      link.href = 'tel:' + phoneNumber;
-
-      // 添加到页面并点击它
-      document.body.appendChild(link);
-      link.click();
-
-      // 之后移除链接
-      document.body.removeChild(link);
-    }
-  </script>
-</body>
+      链接.链接地址 = 'tel:' + 电话号码;
+      文档.主体.appendChild(链接); // 将链接添加到页面中
+      链接.点击(); // 触发点击事件
+      文档.主体.移除子节点(链接); // 删除链接
+    输入：}
+  输入：</脚本>
+</身体>
 </html>
